@@ -15,8 +15,8 @@ typedef struct {
 void save_notes();
 void load_notes();
 void export_to_json();
-void on_save_menu_item_activate(GtkMenuItem *menuitem, gpointer data);
-void on_load_menu_item_activate(GtkMenuItem *menuitem, gpointer data);
-void on_export_menu_item_activate(GtkMenuItem *menuitem, gpointer data);
+void save_menu_item(GtkMenuItem *menuitem, gpointer data);
+void load_menu_item(GtkMenuItem *menuitem, gpointer data);
+void export_menu_item(GtkMenuItem *menuitem, gpointer data);
 
 #endif // SONO_H
