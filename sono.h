@@ -2,6 +2,7 @@
 #define SONO_H
 
 #include <gtk/gtk.h>
+#include <json-c/json.h>
 
 #define MAX_NOTES 100
 
@@ -11,6 +12,9 @@ typedef struct {
     char content[500];
     char tags[100];
 } Note;
+
+extern Note notes[MAX_NOTES];
+extern int note_count;
 
 void save_notes();
 void load_notes();
